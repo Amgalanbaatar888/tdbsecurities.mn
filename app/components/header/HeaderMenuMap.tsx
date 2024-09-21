@@ -8,7 +8,7 @@ export function HeaderMenuMap() {
 
   return (
     <>
-      <div className=" flex items-center">
+      <div className="flex items-center">
         {headerMenu.map((item) => (
           <a
             key={item.id}
