@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Mainmenu } from "./topBarMenuMap";
+import { Mainmenu } from "./MainMenu";
 
 type BgColorType = "bg-white" | "bg-[#DFDFDF]";
 

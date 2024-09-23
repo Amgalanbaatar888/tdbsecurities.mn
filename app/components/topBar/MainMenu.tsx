@@ -1,8 +1,14 @@
 "use client";
-import { topBarMenu } from "../topBar/topBarMenu";
+import { topBarMenu } from "./topBarMenu";
 import { usePathname } from "next/navigation";
 
-export function Mainmenu({ bgColor }: any) {
+type BgColorType = "bg-white" | "bg-[#DFDFDF]";
+
+interface MainmenuProps {
+  bgColor: BgColorType;
+}
+
+export function Mainmenu({ bgColor }: MainmenuProps) {
   const pathname = usePathname();
 
   const textColor =
