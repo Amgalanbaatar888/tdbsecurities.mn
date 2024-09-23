@@ -2,11 +2,7 @@
 import { topBarMenu } from "../topBar/topBarMenu";
 import { usePathname } from "next/navigation";
 
-interface MainmenuProps {
-  bgColor: "bg-white" | "bg-[#DFDFDF]";
-}
-
-export function Mainmenu({ bgColor }: MainmenuProps) {
+export function Mainmenu({ bgColor }: any) {
   const pathname = usePathname();
 
   const textColor =

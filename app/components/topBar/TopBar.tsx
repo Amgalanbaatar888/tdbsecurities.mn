@@ -2,12 +2,14 @@
 import { useEffect, useState } from "react";
 import { Mainmenu } from "./topBarMenuMap";
 
+type BgColorType = "bg-white" | "bg-[#DFDFDF]";
+
 export default function TopBar() {
-  const [bgColor, setBgColor] = useState("bg-white");
+  const [bgColor, setBgColor] = useState<BgColorType>("bg-white");
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
-      setBgColor("bg-[#DCDCDE]");
+      setBgColor("bg-[#DFDFDF]");
     } else {
       setBgColor("bg-white");
     }
