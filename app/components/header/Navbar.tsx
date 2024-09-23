@@ -44,7 +44,7 @@ export function Navbar() {
             <Button
               variant="text"
               onClick={(e) => (item.submenu ? handleClick(e, item.id) : null)}
-              className="text-white font-semibold "
+              className="!text-white !font-semibold"
             >
               {item.label}
             </Button>
