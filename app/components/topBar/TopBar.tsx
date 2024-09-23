@@ -1,10 +1,31 @@
+"use client";
+import { useEffect, useState } from "react";
 import { Mainmenu } from "./topBarMenuMap";
 
 export default function TopBar() {
+  const [bgColor, setBgColor] = useState("bg-white");
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setBgColor("bg-[#DCDCDE]");
+    } else {
+      setBgColor("bg-white");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="border w-full h-14 max-sm:hidden">
+    <div
+      className={`flex items-center w-full h-14 max-sm:hidden sticky top-0 z-10 transition-colors duration-300 ${bgColor}`}
+    >
       <div className="mx-auto container flex justify-end items-center">
-        <Mainmenu />
+        <Mainmenu bgColor={bgColor} />
       </div>
     </div>
   );

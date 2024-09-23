@@ -59,7 +59,7 @@ const DiscriminateServiceCard: React.FC<DiscriminateServiceCardProps> = ({
 
 const ServiceCardList = () => {
   return (
-    <div className="flex flex-wrap gap-5 justify-center items-center mt-16 max-sm:mt-8 space-x-0 space-y-4 md:space-x-4 md:space-y-0">
+    <div className="flex flex-wrap gap-7 justify-center items-center mt-16 max-sm:mt-8 space-x-0 space-y-4 md:space-x-4 md:space-y-0">
       {services.map((service, index) => (
         <div className="flex-shrink-0" key={index}>
           <DiscriminateServiceCard

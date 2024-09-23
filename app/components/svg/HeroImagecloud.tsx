@@ -23,8 +23,8 @@ export default function HeroImagecloud() {
           y2="411.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FAFBFF" stop-opacity="0" />
-          <stop offset="0.89" stop-color="white" />
+          <stop stopColor="#FAFBFF" stopOpacity="0" />
+          <stop offset="0.89" stopColor="white" />
         </linearGradient>
       </defs>
     </svg>

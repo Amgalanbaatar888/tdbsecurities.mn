@@ -1,11 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Header from "../header/Header";
-import Button from "../Button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import Header from "./header/Header";
+import Button from "./button/Button";
 import Image from "next/image";
-import HeroImagecloud from "../svg/HeroImagecloud";
 
 interface Slide {
   id: number;
@@ -45,16 +43,18 @@ const HeroSlider: React.FC = () => {
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >
-          <Image
-            src={slide.image}
-            alt={slide.caption}
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-            priority={index === currentSlide}
-            onLoadingComplete={() => setIsLoading(false)}
-            sizes="100vw"
-          />
+          <div className="relative w-full h-full">
+            <Image
+              src={slide.image}
+              alt={slide.caption}
+              fill
+              quality={100}
+              priority={index === currentSlide}
+              onLoad={() => setIsLoading(false)}
+              sizes="100vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       ))}
 

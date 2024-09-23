@@ -21,6 +21,16 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/components/header/mobileHeader/nav/index.jsx",
+    "app/components/header/mobileHeader/nav/footer/index.jsx",
+    "app/components/header/mobileHeader/nav/link/index.jsx",
+    "app/components/header/mobileHeader/nav/curve/index.jsx",
+    "app/components/header/mobileHeader/index.jsx"
+  ],
   "exclude": ["node_modules"]
 }
