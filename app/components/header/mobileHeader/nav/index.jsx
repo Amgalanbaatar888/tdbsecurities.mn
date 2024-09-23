@@ -8,7 +8,7 @@ import Curve from "./curve";
 import Footer from "./footer";
 import { topBarMenu } from "@/app/components/topBar/topBarMenu";
 
-export default function index() {
+export default function Index() {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
@@ -35,9 +35,9 @@ export default function index() {
               <Link
                 key={index}
                 data={{ ...data, index }}
-                isActive={selectedIndicator == data.link}
+                isActive={selectedIndicator === data.link}
                 setSelectedIndicator={setSelectedIndicator}
-              ></Link>
+              />
             );
           })}
         </div>

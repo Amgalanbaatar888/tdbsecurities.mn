@@ -5,7 +5,6 @@ import { IoSearch } from "react-icons/io5";
 import { Navbar } from "./Navbar";
 import MobileHeader from "../header/mobileHeader/index";
 import { useRouter } from "next/navigation";
-import { create } from "domain";
 
 export default function Header() {
   const router = useRouter();

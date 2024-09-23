@@ -1,5 +1,3 @@
-import { MdOutlineUnfoldMore } from "react-icons/md";
-
 export const topBarMenu = [
   { id: 1, label: "БИДНИЙ ТУХАЙ", link: "/about-us" },
   { id: 2, label: "ҮЙЛЧИЛГЭЭ", link: "/service" },
